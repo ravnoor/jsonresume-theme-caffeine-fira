@@ -16,6 +16,7 @@
   "license": "MIT",
   "scripts": {
     "start": "npx gulp && npx resume serve --theme .",
+    "save": "npx gulp && npx resume export resume --format html --theme .",
     "export": "npx gulp && npx resume export resume --format pdf --theme ."
   },
   "devDependencies": {
