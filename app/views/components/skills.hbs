@@ -5,12 +5,38 @@
     {{#if name}}
       {{> title value=name}}
     {{/if}}
-    {{#if level}}
-      <h4 class="bold">{{level}}</h4>
+    {{#if proficient}}
+      <h4 class="smallcaps bold underline">proficient</h4>
     {{/if}}
-    {{#if keywords.length}}
+    {{#if proficient.length}}
       <ul class="minimal">
-        {{#each keywords}}
+        {{#each proficient}}
+        <li>
+          <h6>{{.}}</h6>
+        </li>
+        {{/each}}
+      </ul>
+    {{/if}}
+
+    {{#if intermediate}}
+      <h4 class="smallcaps bold underline">intermediate</h4>
+    {{/if}}
+    {{#if intermediate.length}}
+      <ul class="minimal">
+        {{#each intermediate}}
+        <li>
+          <h6>{{.}}</h6>
+        </li>
+        {{/each}}
+      </ul>
+    {{/if}}
+
+    {{#if competent}}
+      <h4 class="smallcaps bold underline">competent</h4>
+    {{/if}}
+    {{#if competent.length}}
+      <ul class="minimal">
+        {{#each competent}}
         <li>
           <h6>{{.}}</h6>
         </li>
