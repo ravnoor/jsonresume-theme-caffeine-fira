@@ -25,7 +25,7 @@
   margin-right: 18px;
 
   img {
-    height: $profile-pic-size;
+    // height: $profile-pic-size;
     width: $profile-pic-size;
     border-radius: 50%;
     border: 2px solid $primary-color;
@@ -34,4 +34,30 @@
 
 .summary {
   margin: spacing(1) 0 spacing(1);
+}
+
+.smallcaps {
+  font-variant: small-caps;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.wide {
+  margin: spacing(2) 0 0;
+  -webkit-padding-start: spacing(2);
+}
+
+.underline {
+  text-decoration-line: underline;
+  margin-bottom: 0.4rem;
+}
+
+.code {
+  font-family: monospace;
 }

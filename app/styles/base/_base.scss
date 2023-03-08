@@ -9,17 +9,26 @@ body {
 
 h1,
 h2,
-h3,
-h4,
-h5,
 h6 {
   text-transform: uppercase;
   margin: 0;
 }
 
+h5 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
 h1 {
-  @include secondaryFont(700);
-  @include font-size(10);
+  @include secondaryFont(600);
+  @include font-size(8);
   letter-spacing: 1px;
   margin-bottom: spacing(1);
 }
@@ -32,26 +41,26 @@ h2 {
 
 h3 {
   @include primaryFont(300);
-  @include font-size(3.5);
+  @include font-size(3);
   letter-spacing: .4px;
 
   &.bold {
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 
 h4 {
   @include primaryFont(300);
-  @include font-size(3);
+  @include font-size(2.75);
 
   &.bold {
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 
 h5 {
   @include primaryFont(300);
-  @include font-size(2.75);
+  @include font-size(2.5);
 
   &.italic {
     font-style: italic;
@@ -60,7 +69,7 @@ h5 {
 
 h6 {
   @include primaryFont();
-  @include font-size(2.5);
+  @include font-size(2);
 }
 
 a {
@@ -72,14 +81,14 @@ a {
   }
 
   .fa-external-link {
-    font-size: 10px;
+    font-size: 8px;
     vertical-align: text-top;
   }
 }
 
 p,
 li {
-  @include font-size(2.75);
+  @include font-size(2.25);
 }
 
 blockquote {
@@ -90,15 +99,16 @@ blockquote {
 }
 
 em {
-  color: $gray-dark;
+  color: $gray-darker;
 }
 
 ul {
-  margin: spacing(2) 0 0;
-  -webkit-padding-start: spacing(5);
+  margin: spacing(-1) 0 0;
+  -webkit-padding-start: spacing(-1);
 
   li {
     padding-left: spacing(2);
+    @include font-size(2.25);
   }
 
   &.minimal {
