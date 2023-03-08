@@ -7,13 +7,20 @@
       <h5 class="location">{{location}}</h5>
     {{/if}}
 
-    <h4>{{#if studyType}}{{studyType}} {{/if}}{{#if area}}{{area}}{{/if}}</h4>
+    <h4 class="smallcaps">{{#if studyType}}{{studyType}} {{/if}}{{#if area}}{{area}}{{/if}}</h4>
 
     {{#if gpa}}
-      <h5>{{gpa}}</h5>
+      <h5 class="uppercase">{{gpa}}</h5>
     {{/if}}
     {{#if specialization}}
       <h5 class="specialization">{{specialization}}</h5>
+    {{/if}}
+    {{#if thesis}}
+      <h5 class="thesis">
+        Thesis: <a href="{{thesis_url}}" target="_blank">
+        {{thesis}} <i class="fa fa-external-link" aria-hidden="true"></i>
+      </a>
+      </h5>
     {{/if}}
     {{#if courses.length}}
       <ul class="two-column">
