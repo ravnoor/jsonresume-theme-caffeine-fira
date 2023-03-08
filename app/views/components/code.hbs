@@ -1,0 +1,19 @@
+{{#if resume.code.length}}
+<div class="container code-container">
+  {{> title value="Code"}}
+
+  <ul class="minimal">
+    {{#each resume.code}}
+    <li>
+      {{#if repo}}
+        <h6 class="info-text code">
+        <a href="{{repo_url}}" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i>://{{repo}} <i class="fa fa-external-link" aria-hidden="true"></i>
+      {{/if}}
+      </a>
+    </h6>
+    </li>
+    {{/each}}
+  </ul>
+</div>
+{{/if}}
