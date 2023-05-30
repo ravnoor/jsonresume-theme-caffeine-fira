@@ -88,7 +88,7 @@ a {
 
 p,
 li {
-  @include font-size(2.25);
+  @include font-size(2.45);
 }
 
 blockquote {
@@ -105,10 +105,14 @@ em {
 ul {
   margin: spacing(-1) 0 0;
   -webkit-padding-start: spacing(-1);
+  text-align: justify;
 
   li {
-    padding-left: spacing(2);
-    @include font-size(2.25);
+    padding-left: spacing(1.5);
+    @include font-size(2.45);
+    position: relative;
+    left: -20px;
+    margin: 2px 0;
   }
 
   &.minimal {
@@ -133,6 +137,13 @@ ul {
   }
 }
 
+// ul::after {
+//   width: 100%;
+//   display: inline-block;
+//   content: ".";
+//   visibility: hidden;
+// }
+
 @page {
-  size: A4;
+  size: Letter;
 }
