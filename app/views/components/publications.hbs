@@ -1,13 +1,13 @@
 {{#if resume.publications.length}}
 <div class="container publications-container">
-  {{> title value="Selected Publications"}}
+  {{> publication-title value="Selected Publications"}}
 
   {{#each resume.publications}}
   <section class="item">
     {{> publication-header name=this.name}}
 
     {{#if publisher}}
-      <h5 class="bold smallcaps">{{publisher}} - {{#if releaseDate}}{{formatDate releaseDate}}{{/if}}</h5>
+      <h4 class="bold smallcaps">{{publisher}} - {{#if releaseDate}}{{formatDate releaseDate}}{{/if}}</h4>
     {{/if}}
 
     {{#if authors}}

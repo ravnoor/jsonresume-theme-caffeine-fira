@@ -1,12 +1,12 @@
 {{#if resume.skills.length}}
-<div class="skills-container">
+<div class="container skills-container">
   {{#each resume.skills}}
-  <section class="container">
+  <section>
     {{#if name}}
       {{> title value=name}}
     {{/if}}
     {{#if proficient}}
-      <h4 class="smallcaps bold underline">proficient</h4>
+      <h6 class="header smallcaps bold underline">proficient</h6>
     {{/if}}
     {{#if proficient.length}}
       <ul class="minimal">
@@ -19,7 +19,7 @@
     {{/if}}
 
     {{#if intermediate}}
-      <h4 class="smallcaps bold underline">intermediate</h4>
+      <h6 class="header smallcaps bold underline">intermediate</h6>
     {{/if}}
     {{#if intermediate.length}}
       <ul class="minimal">
@@ -32,7 +32,7 @@
     {{/if}}
 
     {{#if competent}}
-      <h4 class="smallcaps bold underline">competent</h4>
+      <h6 class="header smallcaps bold underline">competent</h6>
     {{/if}}
     {{#if competent.length}}
       <ul class="minimal">

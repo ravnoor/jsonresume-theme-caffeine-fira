@@ -1,19 +1,24 @@
 {{#if resume.code.length}}
 <div class="container code-container">
-  {{> title value="Code"}}
-
-  <ul class="minimal">
-    {{#each resume.code}}
-    <li>
-      {{#if repo}}
-        <h6 class="info-text code">
-        <a href="{{repo_url}}" target="_blank">
-        <i class="fa fa-github" aria-hidden="true"></i>://{{repo}} <i class="fa fa-external-link" aria-hidden="true"></i>
+  {{> title value="Software (Open-Source)"}}
+  
+  {{#each resume.code}}
+    <section class="item">
+      {{> section-header name=this.repo website=this.repo_url }}
+      {{#if summary}}
+        <p class="summary">{{summary}}</p>
       {{/if}}
-      </a>
-    </h6>
-    </li>
+
+      {{#if principles}}
+        <p class="info-text"><u>Principles Implemented</u>: {{ principles }}</p>
+      {{/if}}
+
+      {{#if stack}}
+        <p class="info-text"><u>Technology Stack</u>: {{ stack }}</p>
+      {{/if}}
+
+    </section>
+    
     {{/each}}
-  </ul>
 </div>
 {{/if}}

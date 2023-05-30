@@ -2,8 +2,16 @@
 {{#if summary}}
 <div class="container summary-container">
   {{> title value="Summary"}}
-  <p class="summary">
-    {{summary}}
+  <p class="summary minimal">
+    {{#if summary.length}}
+      <ul>
+        {{#each summary}}
+        <li>{{.}}</li>
+        {{/each}}
+      </ul>
+    {{else}}
+      {{summary}}
+    {{/if}}
   </p>
 </div>
 {{/if}}
