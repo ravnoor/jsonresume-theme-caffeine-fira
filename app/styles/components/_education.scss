@@ -13,4 +13,22 @@
     text-transform: none;
     font-style: italic;
   }
+
+  .coursework {
+    text-transform: none;
+    font-style: italic;
+  }
+
+  .course-column {
+    // font-size: 40px;
+    font-weight: 300;
+    -webkit-column-count: 2;
+    -webkit-column-gap: spacing(5);
+    column-count: 2;
+    column-gap: spacing(5);
+
+    li {
+      padding-left: 0;
+    }
+  }
 }
